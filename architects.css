@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 12px;
   }
 
   /* Shared styles */
@@ -40,6 +41,10 @@ main{
 }
 
 /* header styles */
+header{
+    padding-bottom: 50px;
+    margin-bottom: 85px;
+}
 
 
 
@@ -62,7 +67,7 @@ main{
     font-weight: 500;
 }
 
-.nav-bar, .banner{
+.nav-bar, .banner, .feature{
     max-width: 1200px;
     margin: 0 auto;
 
@@ -87,13 +92,44 @@ main{
     max-width: 1100px;
     margin: 0 auto;
     gap: 50px;
+    align-items: center;
 }
+
+section {
+    margin-bottom: 120px;
+}
+.our-features{
+    margin-top: 120px;
+}
+
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-/* responsive media quert */
+.feature{
+    display: flex;
+    gap: 45px;
+}
+.feature-image-container img{
+    width: 100%;
+}
+
+/* feature section title */
+.feature-title{
+    font-size: 40px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.card{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 10px lightgray;
+    margin-bottom: 30px;
+
+}
+/* responsive media query */
 @media screen and (max-width:576px) {
     .nav-bar, .nav-bar-links{
         flex-direction: column;
