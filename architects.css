@@ -25,6 +25,9 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+p{
+    color: rgb(173, 173, 173);
+}
 
 /* dark 02 */
 .text-gray{
@@ -109,10 +112,13 @@ section {
 }
 .feature{
     display: flex;
-    gap: 45px;
+    gap: 100px;
+    margin-top: 100px;
+    justify-content: space-between;
 }
 .feature-image-container img{
     width: 100%;
+
 }
 
 /* feature section title */
@@ -121,13 +127,46 @@ section {
     font-weight: 700;
     border-left: 5px solid #FF900E;
     padding-left: 20px;
+    margin-bottom: 30px;
+}
+.our-features .feature-description{
+    margin-bottom: 30px;
 }
 .card{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 3px 5px 10px lightgray;
     margin-bottom: 30px;
+    width: 450px;
+    height: 100px;
 
+}
+.card-container h4{
+    font-size: 16px;
+    margin-top: 0;
+}
+.feature-button{
+    background-color: #FF900E;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    margin-top: -100px;
+    margin-left: -60px;
+}
+
+.feature-btn-text{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    margin: 10px;
+}
+.feature-button h1{
+    font-size: 40px;
+    margin: 0;
+    
 }
 /* responsive media query */
 @media screen and (max-width:576px) {
